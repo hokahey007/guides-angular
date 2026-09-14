@@ -37,6 +37,20 @@
 
 ---
 
+## 📑 Contenidos
+
+1. [Los componentes en Angular](#1-los-componentes-en-angular)
+2. [Crear y cargar componentes](#3-crear-un-componente-con-angular-cli)
+3. [Bindings y control de flujo](#5-interpolación)
+4. [Comunicación entre componentes](#14-comunicación-entre-componentes)
+5. [Encapsulamiento y detección de cambios](#18-encapsulamiento-css)
+6. [Ciclo de vida del componente](#21-ciclo-de-vida-del-componente)
+7. [Taller práctico](#30-taller-práctico-interfaces-con-componentes-angular)
+8. [Reto integrador](#31-reto-integrador-catálogo-interactivo-de-productos)
+9. [Diagnóstico y reflexión](#32-diagnóstico-de-errores-angular)
+
+---
+
 # 1. Los componentes en Angular
 
 Los componentes son los bloques básicos de una aplicación Angular. Cada uno controla una parte de la interfaz, por ejemplo una lista de productos o un formulario de compra.

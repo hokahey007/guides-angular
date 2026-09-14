@@ -72,6 +72,19 @@ figure.guide-figure figcaption {
 
 ---
 
+## 📑 Contenidos
+
+1. [Instalar NVM for Windows](#1-instalar-nvm-for-windows)
+2. [Instalar y activar Node.js 22](#3-instalar-la-última-versión-disponible-de-nodejs-22)
+3. [Comprobar npm y el entorno](#5-comprobar-npm)
+4. [Instalación global y local de Angular CLI](#7-angular-cli-instalación-global-y-local)
+5. [Ejecutar Angular CLI con npx](#10-ejecutar-angular-cli-local-con-npx)
+6. [Crear y ejecutar un proyecto Angular](#13-crear-un-nuevo-proyecto-angular-19)
+7. [Solución de problemas de PowerShell](#16-posible-problema-con-powershell)
+8. [Configuración y comprobación final](#19-configuración-recomendada-para-el-aula)
+
+---
+
 ## 🧭 Entorno que utilizaremos
 
 ```text
@@ -962,4 +975,3 @@ Angular CLI local:    19.x
 
 > ✅ **Recomendación final del curso**  
 > Angular CLI global facilita el trabajo desde la terminal, pero **la versión local del proyecto es la que debe considerarse como referencia** para asegurar que todos los desarrolladores utilizan el mismo entorno.
-

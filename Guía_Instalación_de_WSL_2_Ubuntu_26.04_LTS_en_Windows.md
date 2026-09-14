@@ -108,7 +108,13 @@
 21. [Solución de problemas](#21-solución-de-problemas)
 22. [Copias de seguridad](#22-copias-de-seguridad)
 23. [Estructura para desarrollo](#23-estructura-para-desarrollo)
-24. [Resumen](#24-resumen)
+24. [Comprobación final](#24-comprobación-final)
+25. [Arquitectura final](#25-arquitectura-final)
+26. [Resumen de comandos](#26-resumen-de-comandos)
+27. [Conceptos clave](#27-conceptos-clave)
+28. [Actividad de comprobación](#28-actividad-de-comprobación)
+29. [Preguntas de reflexión](#29-preguntas-de-reflexión)
+30. [Resultado](#resultado)
 
 ---
 

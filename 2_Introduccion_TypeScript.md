@@ -38,6 +38,22 @@ Al finalizar esta unidad serás capaz de:
 
 ---
 
+## 📑 Contenidos
+
+1. [JavaScript esencial](#1-javascript-esencial)
+2. [Funciones y operadores modernos](#3-spread-operator)
+3. [Clases, herencia y módulos](#8-clases-en-javascript)
+4. [Fundamentos de TypeScript](#11-qué-es-typescript)
+5. [Tipos y funciones](#15-tipos-en-typescript)
+6. [Clases, interfaces y genéricos](#21-clases-en-typescript)
+7. [Utility Types](#29-utility-types)
+8. [Actividad práctica](#31-actividad-práctica)
+9. [Taller práctico](#35-taller-práctico-de-typescript)
+10. [Reto integrador](#36-reto-integrador-catálogo-tipado-de-productos)
+11. [Diagnóstico y reflexión](#37-ejercicios-de-diagnóstico-de-errores)
+
+---
+
 # 1. JavaScript esencial
 
 TypeScript es un **superconjunto sintáctico de JavaScript**. Esto significa que parte de JavaScript y añade nuevas características como tipos, interfaces y genéricos.

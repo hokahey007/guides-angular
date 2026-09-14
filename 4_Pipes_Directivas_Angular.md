@@ -37,6 +37,19 @@ Al finalizar esta unidad serás capaz de:
 
 ---
 
+## 📑 Contenidos
+
+1. [Pipes integrados](#2-pipes-integrados-en-angular)
+2. [Pipes personalizados](#10-crear-un-pipe-personalizado)
+3. [Pipes puros e inmutabilidad](#15-pipes-puros-e-impuros)
+4. [Directivas de atributo](#17-qué-es-una-directiva)
+5. [HostBinding y HostListener](#22-hostbinding-y-hostlistener)
+6. [Taller práctico](#29-taller-práctico-pipes-y-directivas-angular)
+7. [Reto integrador](#30-reto-integrador-catálogo-enriquecido)
+8. [Diagnóstico y reflexión](#31-diagnóstico-de-errores)
+
+---
+
 # 1. ¿Qué es un pipe?
 
 Los **pipes** permiten transformar el resultado de una expresión directamente en la vista.

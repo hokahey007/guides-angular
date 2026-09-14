@@ -33,6 +33,20 @@
 
 ---
 
+## 📑 Contenidos
+
+1. [Callbacks y promesas](#2-callbacks)
+2. [Observables y programación reactiva](#6-observables)
+3. [RxJS y sus operadores](#12-rxjs)
+4. [Productos como observables](#19-convertir-productsservice-a-observables)
+5. [Gestión de suscripciones](#21-cancelar-suscripciones)
+6. [Pipe async](#23-pipe-async)
+7. [Taller práctico](#30-taller-práctico-promesas-observables-y-rxjs)
+8. [Reto integrador](#31-reto-integrador-panel-reactivo-de-productos)
+9. [Diagnóstico y reflexión](#32-diagnóstico-de-errores-reactivos)
+
+---
+
 # 1. Información asíncrona en aplicaciones Angular
 
 La información asíncrona aparece continuamente en aplicaciones reales:
