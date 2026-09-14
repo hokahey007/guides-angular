@@ -1346,7 +1346,7 @@ Navegador</code></pre>
 
 Los siguientes ejercicios están pensados para realizarse sobre el código de ejemplo de la unidad:
 
-<https://github.com/hokahey007/aprendiendo-angular-con-codigo/tree/main/01_tu_primera_aplicacion_angular>
+<https://github.com/hokahey007/codebase-angular/tree/main/01_tu_primera_aplicacion_angular>
 
 El proyecto utiliza **Angular 19** y parte de la aplicación inicial generada con Angular CLI. No se pretende introducir todavía conceptos avanzados: el objetivo es **comprender y manipular las piezas que ya hemos estudiado en esta unidad**.
 

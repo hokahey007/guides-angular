@@ -1017,7 +1017,7 @@ En esta unidad hemos aprendido a:
 
 Los ejercicios de esta sección toman como referencia directa el proyecto:
 
-<https://github.com/hokahey007/aprendiendo-angular-con-codigo/tree/main/03_ui_con_componentes>
+<https://github.com/hokahey007/codebase-angular/tree/main/03_ui_con_componentes>
 
 El proyecto utiliza Angular 19 y contiene, entre otros, estos elementos:
 

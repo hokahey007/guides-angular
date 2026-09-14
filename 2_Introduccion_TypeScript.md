@@ -1117,7 +1117,7 @@ TypeScript proporciona una capa de seguridad sobre JavaScript gracias al tipado 
 
 Los siguientes ejercicios están pensados para realizarse tomando como referencia la carpeta del repositorio:
 
-<https://github.com/hokahey007/aprendiendo-angular-con-codigo/tree/main/02_introduccion_a_typescript>
+<https://github.com/hokahey007/codebase-angular/tree/main/02_introduccion_a_typescript>
 
 El objetivo no es introducir todavía conceptos nuevos de Angular, sino **practicar de forma progresiva el JavaScript moderno y el TypeScript que después utilizaremos dentro de los componentes, servicios y demás elementos de Angular**.
 

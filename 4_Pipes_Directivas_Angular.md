@@ -1004,7 +1004,7 @@ También hemos trabajado con:
 
 Los ejercicios de esta sección toman como referencia directa el proyecto:
 
-<https://github.com/hokahey007/aprendiendo-angular-con-codigo/tree/main/04_pipes_y_directivas>
+<https://github.com/hokahey007/codebase-angular/tree/main/04_pipes_y_directivas>
 
 El proyecto de referencia ya contiene:
 
