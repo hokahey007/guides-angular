@@ -39,15 +39,15 @@
 
 ## 📑 Contenidos
 
-1. [Los componentes en Angular](#1-los-componentes-en-angular)
-2. [Crear y cargar componentes](#3-crear-un-componente-con-angular-cli)
-3. [Bindings y control de flujo](#5-interpolación)
-4. [Comunicación entre componentes](#14-comunicación-entre-componentes)
-5. [Encapsulamiento y detección de cambios](#18-encapsulamiento-css)
-6. [Ciclo de vida del componente](#21-ciclo-de-vida-del-componente)
-7. [Taller práctico](#30-taller-práctico-interfaces-con-componentes-angular)
-8. [Reto integrador](#31-reto-integrador-catálogo-interactivo-de-productos)
-9. [Diagnóstico y reflexión](#32-diagnóstico-de-errores-angular)
+1. [[#1. Los componentes en Angular|Los componentes en Angular]]
+2. [[#3. Crear un componente con Angular CLI|Crear un componente con Angular CLI]]
+3. [[#5. Interpolación|Interpolación]]
+4. [[#14. Comunicación entre componentes|Comunicación entre componentes]]
+5. [[#18. Encapsulamiento CSS|Encapsulamiento CSS]]
+6. [[#21. Ciclo de vida del componente|Ciclo de vida del componente]]
+7. [[#30. Taller práctico: interfaces con componentes Angular 🧪|Taller práctico: interfaces con componentes Angular 🧪]]
+8. [[#31. Reto integrador: catálogo interactivo de productos 🚀|Reto integrador: catálogo interactivo de productos 🚀]]
+9. [[#32. Diagnóstico de errores Angular 🔎|Diagnóstico de errores Angular 🔎]]
 
 ---
 

@@ -97,16 +97,16 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [Errores en tiempo de ejecución](#2-errores-en-tiempo-de-ejecución)
-2. [Capturar y gestionar errores HTTP](#3-capturar-errores-http-con-catcherror)
-3. [Reintentos y gestión por servicio](#10-reintentar-una-petición-con-retry)
-4. [Manejador global con ErrorHandler](#12-errorhandler)
-5. [Errores 401 e interceptores](#18-error-401-unauthorized)
-6. [Errores del framework Angular](#22-errores-del-framework-angular)
-7. [Estrategia y arquitectura de errores](#29-estrategia-general-de-tratamiento-de-errores)
-8. [Taller práctico](#34-taller-práctico-gestión-de-errores-sobre-el-proyecto-real)
-9. [Reto integrador](#35-reto-integrador-arquitectura-de-errores-de-la-tienda)
-10. [Diagnóstico y reflexión](#36-diagnóstico-de-errores)
+1. [[#2. Errores en tiempo de ejecución|Errores en tiempo de ejecución]]
+2. [[#3. Capturar errores HTTP con catchError|Capturar errores HTTP con catchError]]
+3. [[#10. Reintentar una petición con retry|Reintentar una petición con retry]]
+4. [[#12. ErrorHandler|ErrorHandler]]
+5. [[#18. Error 401 Unauthorized|Error 401 Unauthorized]]
+6. [[#22. Errores del framework Angular|Errores del framework Angular]]
+7. [[#29. Estrategia general de tratamiento de errores|Estrategia general de tratamiento de errores]]
+8. [[#34. Taller práctico: gestión de errores sobre el proyecto real 🧪|Taller práctico: gestión de errores sobre el proyecto real 🧪]]
+9. [[#35. Reto integrador: arquitectura de errores de la tienda 🚀|Reto integrador: arquitectura de errores de la tienda 🚀]]
+10. [[#36. Diagnóstico de errores 🔎|Diagnóstico de errores 🔎]]
 
 ---
 

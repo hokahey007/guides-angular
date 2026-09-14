@@ -98,15 +98,15 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [Introducción a Dependency Injection](#2-introducción-a-dependency-injection)
-2. [Crear e inyectar servicios](#3-crear-nuestro-primer-servicio-angular)
-3. [Proveedores e inyectores](#8-proveedores-e-inyectores)
-4. [Jerarquía y alcance de servicios](#11-jerarquía-de-inyectores)
-5. [Providers avanzados](#24-sintaxis-completa-de-providers)
-6. [InjectionToken y configuración](#27-proporcionar-valores-con-usevalue)
-7. [Taller práctico](#34-taller-práctico-servicios-e-inyección-de-dependencias)
-8. [Reto integrador](#35-reto-integrador-catálogo-con-servicios-y-scopes)
-9. [Diagnóstico y reflexión](#36-diagnóstico-de-errores-de-di)
+1. [[#2. Introducción a Dependency Injection|Introducción a Dependency Injection]]
+2. [[#3. Crear nuestro primer servicio Angular|Crear nuestro primer servicio Angular]]
+3. [[#8. Proveedores e inyectores|Proveedores e inyectores]]
+4. [[#11. Jerarquía de inyectores|Jerarquía de inyectores]]
+5. [[#24. Sintaxis completa de providers|Sintaxis completa de providers]]
+6. [[#27. Proporcionar valores con useValue|Proporcionar valores con useValue]]
+7. [[#34. Taller práctico: servicios e inyección de dependencias 🧪|Taller práctico: servicios e inyección de dependencias 🧪]]
+8. [[#35. Reto integrador: catálogo con servicios y scopes 🚀|Reto integrador: catálogo con servicios y scopes 🚀]]
+9. [[#36. Diagnóstico de errores de DI 🔎|Diagnóstico de errores de DI 🔎]]
 
 ---
 

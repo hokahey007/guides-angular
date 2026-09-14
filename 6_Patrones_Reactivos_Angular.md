@@ -35,15 +35,15 @@
 
 ## 📑 Contenidos
 
-1. [Callbacks y promesas](#2-callbacks)
-2. [Observables y programación reactiva](#6-observables)
-3. [RxJS y sus operadores](#12-rxjs)
-4. [Productos como observables](#19-convertir-productsservice-a-observables)
-5. [Gestión de suscripciones](#21-cancelar-suscripciones)
-6. [Pipe async](#23-pipe-async)
-7. [Taller práctico](#30-taller-práctico-promesas-observables-y-rxjs)
-8. [Reto integrador](#31-reto-integrador-panel-reactivo-de-productos)
-9. [Diagnóstico y reflexión](#32-diagnóstico-de-errores-reactivos)
+1. [[#2. Callbacks|Callbacks]]
+2. [[#6. Observables|Observables]]
+3. [[#12. RxJS|RxJS]]
+4. [[#19. Convertir ProductsService a observables|Convertir ProductsService a observables]]
+5. [[#21. Cancelar suscripciones|Cancelar suscripciones]]
+6. [[#23. Pipe async|Pipe async]]
+7. [[#30. Taller práctico: Promesas, Observables y RxJS 🧪|Taller práctico: Promesas, Observables y RxJS 🧪]]
+8. [[#31. Reto integrador: panel reactivo de productos 🚀|Reto integrador: panel reactivo de productos 🚀]]
+9. [[#32. Diagnóstico de errores reactivos 🔎|Diagnóstico de errores reactivos 🔎]]
 
 ---
 

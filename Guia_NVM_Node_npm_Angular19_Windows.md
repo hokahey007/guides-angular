@@ -74,14 +74,14 @@ figure.guide-figure figcaption {
 
 ## 📑 Contenidos
 
-1. [Instalar NVM for Windows](#1-instalar-nvm-for-windows)
-2. [Instalar y activar Node.js 22](#3-instalar-la-última-versión-disponible-de-nodejs-22)
-3. [Comprobar npm y el entorno](#5-comprobar-npm)
-4. [Instalación global y local de Angular CLI](#7-angular-cli-instalación-global-y-local)
-5. [Ejecutar Angular CLI con npx](#10-ejecutar-angular-cli-local-con-npx)
-6. [Crear y ejecutar un proyecto Angular](#13-crear-un-nuevo-proyecto-angular-19)
-7. [Solución de problemas de PowerShell](#16-posible-problema-con-powershell)
-8. [Configuración y comprobación final](#19-configuración-recomendada-para-el-aula)
+1. [[#1. Instalar NVM for Windows|Instalar NVM for Windows]]
+2. [[#3. Instalar la última versión disponible de Node.js 22|Instalar la última versión disponible de Node.js 22]]
+3. [[#5. Comprobar npm|Comprobar npm]]
+4. [[#7. Angular CLI: instalación global y local|Angular CLI: instalación global y local]]
+5. [[#10. Ejecutar Angular CLI local con npx|Ejecutar Angular CLI local con npx]]
+6. [[#13. Crear un nuevo proyecto Angular 19|Crear un nuevo proyecto Angular 19]]
+7. [[#16. Posible problema con PowerShell|Posible problema con PowerShell]]
+8. [[#19. Configuración recomendada para el aula|Configuración recomendada para el aula]]
 
 ---
 

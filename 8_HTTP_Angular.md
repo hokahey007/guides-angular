@@ -93,13 +93,13 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [Comunicación HTTP en Angular](#13-comunicación-http-en-aplicaciones-angular)
-2. [HttpClient y CRUD](#3-angular-httpclient)
-3. [Productos y caché local](#6-configurar-productsservice-para-http)
-4. [Crear, actualizar y eliminar productos](#11-crear-productos-con-post)
-5. [Autenticación y autorización](#16-autenticación-mediante-http)
-6. [Cabeceras e interceptores](#21-cabeceras-http)
-7. [Taller práctico](#30-taller-práctico-comunicación-http-y-crud)
+1. [[#1. Comunicación con servicios de datos mediante HTTP|Comunicación con servicios de datos mediante HTTP]]
+2. [[#3. Angular HttpClient|Angular HttpClient]]
+3. [[#6. Configurar ProductsService para HTTP|Configurar ProductsService para HTTP]]
+4. [[#11. Crear productos con POST|Crear productos con POST]]
+5. [[#16. Autenticación mediante HTTP|Autenticación mediante HTTP]]
+6. [[#21. Cabeceras HTTP|Cabeceras HTTP]]
+7. [[#30. Taller práctico: comunicación HTTP y CRUD 🧪|Taller práctico: comunicación HTTP y CRUD 🧪]]
 
 ---
 

@@ -95,15 +95,15 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [¿Por qué Signals?](#1-por-qué-signals)
-2. [Writable Signals](#2-crear-y-leer-un-writable-signal)
-3. [Computed Signals](#5-computed-signals)
-4. [Signals y RxJS](#7-signals-y-rxjs)
-5. [Convertir Observable a Signal](#9-convertir-productos-de-observable-a-signal)
-6. [Resumen de la unidad](#13-resumen-de-la-unidad)
-7. [Taller práctico](#15-taller-práctico-estado-reactivo-con-signals)
-8. [Reto integrador](#16-reto-integrador-panel-reactivo-de-catálogo)
-9. [Diagnóstico y reflexión](#17-diagnóstico-de-errores-con-signals)
+1. [[#1. ¿Por qué Signals?|¿Por qué Signals?]]
+2. [[#2. Crear y leer un writable signal|Crear y leer un writable signal]]
+3. [[#5. Computed Signals|Computed Signals]]
+4. [[#7. Signals y RxJS|Signals y RxJS]]
+5. [[#9. Convertir productos de Observable a Signal|Convertir productos de Observable a Signal]]
+6. [[#13. Resumen de la unidad|Resumen de la unidad]]
+7. [[#15. Taller práctico: estado reactivo con Signals 🧪|Taller práctico: estado reactivo con Signals 🧪]]
+8. [[#16. Reto integrador: panel reactivo de catálogo 🚀|Reto integrador: panel reactivo de catálogo 🚀]]
+9. [[#17. Diagnóstico de errores con Signals 🔎|Diagnóstico de errores con Signals 🔎]]
 
 ---
 

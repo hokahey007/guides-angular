@@ -85,36 +85,36 @@
 
 ## 📑 Contenidos
 
-1. [¿Qué es WSL?](#1-qué-es-wsl)
-2. [Arquitectura del entorno](#2-arquitectura-del-entorno)
-3. [Requisitos previos](#3-requisitos-previos)
-4. [Comprobar la virtualización](#4-comprobar-la-virtualización)
-5. [Abrir PowerShell como administrador](#5-abrir-powershell-como-administrador)
-6. [Comprobar WSL](#6-comprobar-wsl)
-7. [Instalar WSL](#7-instalar-wsl)
-8. [Actualizar WSL](#8-actualizar-wsl)
-9. [Configurar WSL 2](#9-configurar-wsl-2)
-10. [Distribuciones disponibles](#10-distribuciones-disponibles)
-11. [Instalar Ubuntu 26.04](#11-instalar-ubuntu-2604)
-12. [Primera ejecución](#12-primera-ejecución)
-13. [Actualizar Ubuntu](#13-actualizar-ubuntu)
-14. [Herramientas básicas](#14-herramientas-básicas)
-15. [Comprobar WSL 2](#15-comprobar-wsl-2)
-16. [Sistema de archivos](#16-sistema-de-archivos)
-17. [Integración Windows/Linux](#17-integración-windowslinux)
-18. [systemd](#18-systemd)
-19. [Visual Studio Code](#19-visual-studio-code)
-20. [Comandos fundamentales](#20-comandos-fundamentales)
-21. [Solución de problemas](#21-solución-de-problemas)
-22. [Copias de seguridad](#22-copias-de-seguridad)
-23. [Estructura para desarrollo](#23-estructura-para-desarrollo)
-24. [Comprobación final](#24-comprobación-final)
-25. [Arquitectura final](#25-arquitectura-final)
-26. [Resumen de comandos](#26-resumen-de-comandos)
-27. [Conceptos clave](#27-conceptos-clave)
-28. [Actividad de comprobación](#28-actividad-de-comprobación)
-29. [Preguntas de reflexión](#29-preguntas-de-reflexión)
-30. [Resultado](#resultado)
+1. [[#1. ¿Qué es WSL?|¿Qué es WSL?]]
+2. [[#2. Arquitectura del entorno|Arquitectura del entorno]]
+3. [[#3. Requisitos previos|Requisitos previos]]
+4. [[#4. Comprobar la virtualización|Comprobar la virtualización]]
+5. [[#5. Abrir PowerShell como administrador|Abrir PowerShell como administrador]]
+6. [[#6. Comprobar WSL|Comprobar WSL]]
+7. [[#7. Instalar WSL|Instalar WSL]]
+8. [[#8. Actualizar WSL|Actualizar WSL]]
+9. [[#9. Configurar WSL 2|Configurar WSL 2]]
+10. [[#10. Distribuciones disponibles|Distribuciones disponibles]]
+11. [[#11. Instalar Ubuntu 26.04|Instalar Ubuntu 26.04]]
+12. [[#12. Primera ejecución|Primera ejecución]]
+13. [[#13. Actualizar Ubuntu|Actualizar Ubuntu]]
+14. [[#14. Herramientas básicas|Herramientas básicas]]
+15. [[#15. Comprobar WSL 2|Comprobar WSL 2]]
+16. [[#16. Sistema de archivos|Sistema de archivos]]
+17. [[#17. Integración Windows/Linux|Integración Windows/Linux]]
+18. [[#18. systemd|systemd]]
+19. [[#19. Visual Studio Code|Visual Studio Code]]
+20. [[#20. Comandos fundamentales|Comandos fundamentales]]
+21. [[#21. Solución de problemas|Solución de problemas]]
+22. [[#22. Copias de seguridad|Copias de seguridad]]
+23. [[#23. Estructura para desarrollo|Estructura para desarrollo]]
+24. [[#24. Comprobación final|Comprobación final]]
+25. [[#25. Arquitectura final|Arquitectura final]]
+26. [[#26. Resumen de comandos|Resumen de comandos]]
+27. [[#27. Conceptos clave|Conceptos clave]]
+28. [[#28. 🧪 Actividad de comprobación|🧪 Actividad de comprobación]]
+29. [[#29. 🤔 Preguntas de reflexión|🤔 Preguntas de reflexión]]
+30. [[#🎯 Resultado|🎯 Resultado]]
 
 ---
 

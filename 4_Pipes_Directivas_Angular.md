@@ -39,14 +39,14 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [Pipes integrados](#2-pipes-integrados-en-angular)
-2. [Pipes personalizados](#10-crear-un-pipe-personalizado)
-3. [Pipes puros e inmutabilidad](#15-pipes-puros-e-impuros)
-4. [Directivas de atributo](#17-qué-es-una-directiva)
-5. [HostBinding y HostListener](#22-hostbinding-y-hostlistener)
-6. [Taller práctico](#29-taller-práctico-pipes-y-directivas-angular)
-7. [Reto integrador](#30-reto-integrador-catálogo-enriquecido)
-8. [Diagnóstico y reflexión](#31-diagnóstico-de-errores)
+1. [[#2. Pipes integrados en Angular|Pipes integrados en Angular]]
+2. [[#10. Crear un pipe personalizado|Crear un pipe personalizado]]
+3. [[#15. Pipes puros e impuros|Pipes puros e impuros]]
+4. [[#17. ¿Qué es una directiva?|¿Qué es una directiva?]]
+5. [[#22. @HostBinding y @HostListener|@HostBinding y @HostListener]]
+6. [[#29. Taller práctico: Pipes y Directivas Angular 🧪|Taller práctico: Pipes y Directivas Angular 🧪]]
+7. [[#30. Reto integrador: catálogo enriquecido 🚀|Reto integrador: catálogo enriquecido 🚀]]
+8. [[#31. Diagnóstico de errores 🔎|Diagnóstico de errores 🔎]]
 
 ---
 

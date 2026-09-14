@@ -40,17 +40,17 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [JavaScript esencial](#1-javascript-esencial)
-2. [Funciones y operadores modernos](#3-spread-operator)
-3. [Clases, herencia y módulos](#8-clases-en-javascript)
-4. [Fundamentos de TypeScript](#11-qué-es-typescript)
-5. [Tipos y funciones](#15-tipos-en-typescript)
-6. [Clases, interfaces y genéricos](#21-clases-en-typescript)
-7. [Utility Types](#29-utility-types)
-8. [Actividad práctica](#31-actividad-práctica)
-9. [Taller práctico](#35-taller-práctico-de-typescript)
-10. [Reto integrador](#36-reto-integrador-catálogo-tipado-de-productos)
-11. [Diagnóstico y reflexión](#37-ejercicios-de-diagnóstico-de-errores)
+1. [[#1. JavaScript esencial|JavaScript esencial]]
+2. [[#3. Spread operator|Spread operator]]
+3. [[#8. Clases en JavaScript|Clases en JavaScript]]
+4. [[#11. ¿Qué es TypeScript?|¿Qué es TypeScript?]]
+5. [[#15. Tipos en TypeScript|Tipos en TypeScript]]
+6. [[#21. Clases en TypeScript|Clases en TypeScript]]
+7. [[#29. Utility Types|Utility Types]]
+8. [[#31. Actividad práctica 🧪|Actividad práctica 🧪]]
+9. [[#35. Taller práctico de TypeScript 🧪|Taller práctico de TypeScript 🧪]]
+10. [[#36. Reto integrador: catálogo tipado de productos 🚀|Reto integrador: catálogo tipado de productos 🚀]]
+11. [[#37. Ejercicios de diagnóstico de errores 🔎|Ejercicios de diagnóstico de errores 🔎]]
 
 ---
 

@@ -99,14 +99,14 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [Fundamentos del router](#1-por-qué-necesitamos-routing)
-2. [Configurar rutas y RouterOutlet](#4-activar-el-router)
-3. [Navegación declarativa e imperativa](#9-navegación-con-routerlink)
-4. [Parámetros de ruta y consulta](#19-parámetros-de-ruta)
-5. [Rutas hijas y providers](#26-rutas-hijas)
-6. [Guards y resolvers](#33-guards)
-7. [Lazy loading](#41-lazy-loading)
-8. [Resumen](#48-resumen)
+1. [[#1. ¿Por qué necesitamos routing?|¿Por qué necesitamos routing?]]
+2. [[#4. Activar el router|Activar el router]]
+3. [[#9. Navegación con routerLink|Navegación con routerLink]]
+4. [[#19. Parámetros de ruta|Parámetros de ruta]]
+5. [[#26. Rutas hijas|Rutas hijas]]
+6. [[#33. Guards|Guards]]
+7. [[#41. Lazy loading|Lazy loading]]
+8. [[#48. Resumen|Resumen]]
 
 ---
 

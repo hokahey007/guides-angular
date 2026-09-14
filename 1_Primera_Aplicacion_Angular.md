@@ -98,17 +98,17 @@ Al finalizar esta unidad serás capaz de:
 
 ## 📑 Contenidos
 
-1. [¿Qué es Angular?](#1-qué-es-angular)
-2. [Preparación del entorno de desarrollo](#3-preparación-del-entorno-de-desarrollo)
-3. [Instalación de Angular CLI](#5-instalación-de-angular-cli)
-4. [Crear un nuevo proyecto Angular](#7-crear-un-nuevo-proyecto-angular)
-5. [Estructura y arranque de la aplicación](#8-estructura-inicial-del-proyecto)
-6. [Sintaxis de plantillas](#16-sintaxis-de-plantillas)
-7. [Herramientas para trabajar con Angular](#17-herramientas-para-trabajar-con-angular)
-8. [Primera práctica guiada](#26-primera-práctica-guiada)
-9. [Taller práctico](#31-taller-práctico-comprende-tu-primera-aplicación-angular)
-10. [Reto integrador](#32-reto-integrador-transforma-la-página-inicial)
-11. [Cuestiones de reflexión](#33-cuestiones-de-reflexión-para-entregar)
+1. [[#1. ¿Qué es Angular?|¿Qué es Angular?]]
+2. [[#3. Preparación del entorno de desarrollo|Preparación del entorno de desarrollo]]
+3. [[#5. Instalación de Angular CLI|Instalación de Angular CLI]]
+4. [[#7. Crear un nuevo proyecto Angular|Crear un nuevo proyecto Angular]]
+5. [[#8. Estructura inicial del proyecto|Estructura inicial del proyecto]]
+6. [[#16. Sintaxis de plantillas|Sintaxis de plantillas]]
+7. [[#17. Herramientas para trabajar con Angular|Herramientas para trabajar con Angular]]
+8. [[#26. Primera práctica guiada|Primera práctica guiada]]
+9. [[#31. Taller práctico: comprende tu primera aplicación Angular 🧪|Taller práctico: comprende tu primera aplicación Angular 🧪]]
+10. [[#32. Reto integrador: transforma la página inicial 🚀|Reto integrador: transforma la página inicial 🚀]]
+11. [[#33. Cuestiones de reflexión para entregar 📝|Cuestiones de reflexión para entregar 📝]]
 
 ---
 
