@@ -1,4 +1,4 @@
-# 🚀 Unidad: Construyendo tu primera aplicación Angular
+# 🚀 Unidad 1: Construyendo tu primera aplicación Angular
 <style>
 /* ===== Bloques de código ===== */
 .code-card {
@@ -61,6 +61,11 @@
   background: #fafafa;
 }
 
+
+.code-card[data-lang="json"] pre {
+  background: #fafafa;
+}
+
 /* Las líneas visualmente vacías dentro de <pre><code> se representan
    con &#8203; para evitar que ciertos motores Markdown cierren el bloque HTML. */
 
@@ -75,7 +80,49 @@
 }
 </style>
 
-> **Versión de referencia:** Angular 19  
+## 📚 Índice de contenidos
+
+> Índice compatible con Obsidian. Los enlaces apuntan directamente a los encabezados de esta misma nota.
+
+- [[#1. ¿Qué es Angular?|1. ¿Qué es Angular?]]
+- [[#2. ¿Por qué elegir Angular?|2. ¿Por qué elegir Angular?]]
+- [[#3. Preparación del entorno de desarrollo|3. Preparación del entorno de desarrollo]]
+- [[#4. Requisitos previos|4. Requisitos previos]]
+- [[#5. Instalación de Angular CLI|5. Instalación de Angular CLI]]
+- [[#6. Comandos básicos de Angular CLI|6. Comandos básicos de Angular CLI]]
+- [[#7. Crear un nuevo proyecto Angular|7. Crear un nuevo proyecto Angular]]
+- [[#8. Estructura inicial del proyecto|8. Estructura inicial del proyecto]]
+- [[#9. Ejecutar la aplicación|9. Ejecutar la aplicación]]
+- [[#10. Estructura de `src`|10. Estructura de `src`]]
+- [[#11. Estructura inicial de `app`|11. Estructura inicial de `app`]]
+- [[#12. Componentes|12. Componentes]]
+- [[#13. Bootstrapping de la aplicación|13. Bootstrapping de la aplicación]]
+- [[#14. Configuración de la aplicación|14. Configuración de la aplicación]]
+- [[#15. Configuración del router|15. Configuración del router]]
+- [[#16. Sintaxis de plantillas|16. Sintaxis de plantillas]]
+- [[#17. Herramientas para trabajar con Angular|17. Herramientas para trabajar con Angular]]
+- [[#18. Angular DevTools|18. Angular DevTools]]
+- [[#19. Depuración con VS Code|19. Depuración con VS Code]]
+  - [[#19.1. ¿Qué es un breakpoint?|19.1. ¿Qué es un breakpoint?]]
+  - [[#19.2. Depurar una aplicación Angular|19.2. Depurar una aplicación Angular]]
+- [[#20. VS Code Profiles|20. VS Code Profiles]]
+- [[#21. Angular Language Service|21. Angular Language Service]]
+- [[#22. Diagnóstico de errores|22. Diagnóstico de errores]]
+- [[#23. Material Icon Theme|23. Material Icon Theme]]
+- [[#24. EditorConfig|24. EditorConfig]]
+- [[#25. Esquema general de funcionamiento|25. Esquema general de funcionamiento]]
+- [[#26. Primera práctica guiada|26. Primera práctica guiada]]
+- [[#27. Actividad propuesta 🧪|27. Actividad propuesta 🧪]]
+- [[#28. Preguntas de repaso|28. Preguntas de repaso]]
+- [[#29. Resumen|29. Resumen]]
+- [[#30. Conceptos que debes recordar ⭐|30. Conceptos que debes recordar ⭐]]
+- [[#31. Taller práctico: comprende tu primera aplicación Angular 🧪|31. Taller práctico: comprende tu primera aplicación Angular 🧪]]
+- [[#32. Reto integrador: transforma la página inicial 🚀|32. Reto integrador: transforma la página inicial 🚀]]
+- [[#33. Cuestiones de reflexión para entregar 📝|33. Cuestiones de reflexión para entregar 📝]]
+
+---
+
+> **Versión de referencia del PDF:** Angular 19  
 > **Objetivo:** comprender qué es Angular, por qué utilizarlo, cómo preparar el entorno de desarrollo, crear una primera aplicación con Angular CLI y conocer las principales herramientas del ecosistema.
 
 ---
@@ -93,22 +140,6 @@ Al finalizar esta unidad serás capaz de:
 - Comprender el papel de los **componentes**, el **bootstrapping** y la **interpolación**.
 - Utilizar herramientas como **Angular DevTools** y el **depurador de VS Code**.
 - Configurar un perfil de VS Code orientado al desarrollo con Angular.
-
----
-
-## 📑 Contenidos
-
-1. [[#1. ¿Qué es Angular?|¿Qué es Angular?]]
-2. [[#3. Preparación del entorno de desarrollo|Preparación del entorno de desarrollo]]
-3. [[#5. Instalación de Angular CLI|Instalación de Angular CLI]]
-4. [[#7. Crear un nuevo proyecto Angular|Crear un nuevo proyecto Angular]]
-5. [[#8. Estructura inicial del proyecto|Estructura inicial del proyecto]]
-6. [[#16. Sintaxis de plantillas|Sintaxis de plantillas]]
-7. [[#17. Herramientas para trabajar con Angular|Herramientas para trabajar con Angular]]
-8. [[#26. Primera práctica guiada|Primera práctica guiada]]
-9. [[#31. Taller práctico: comprende tu primera aplicación Angular 🧪|Taller práctico: comprende tu primera aplicación Angular 🧪]]
-10. [[#32. Reto integrador: transforma la página inicial 🚀|Reto integrador: transforma la página inicial 🚀]]
-11. [[#33. Cuestiones de reflexión para entregar 📝|Cuestiones de reflexión para entregar 📝]]
 
 ---
 
@@ -952,14 +983,1252 @@ Cuando se alcanza podemos:
 
 ## 19.2. Depurar una aplicación Angular
 
-1. Abre `app.component.ts`.
-2. Haz clic en el margen izquierdo de una línea para crear un breakpoint.
-3. Abre **Run and Debug** en VS Code.
-4. Inicia la configuración de depuración.
-5. VS Code abrirá la aplicación.
-6. Cuando se alcance el breakpoint, la ejecución quedará pausada.
+Visual Studio Code permite **depurar una aplicación Angular directamente desde el código TypeScript** utilizando el depurador JavaScript integrado y un navegador como Google Chrome.
 
-Esto permite investigar el comportamiento real de la aplicación sin modificar el código con numerosos `console.log`.
+La depuración permite detener temporalmente la aplicación en una determinada línea de código para estudiar qué está ocurriendo en ese instante.
+
+Durante una sesión de depuración podemos:
+
+* detener la ejecución mediante **breakpoints**;
+* consultar el valor de variables y propiedades;
+* ejecutar el programa paso a paso;
+* entrar y salir de métodos;
+* estudiar la pila de llamadas;
+* evaluar expresiones;
+* localizar errores de lógica.
+
+Esto resulta mucho más eficaz que introducir continuamente instrucciones como:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">console.log(variable);</code></pre>
+</div>
+
+La aplicación Angular y el depurador son, además, **dos procesos diferentes**.
+
+Primero ejecutaremos la aplicación desde una terminal y, posteriormente, iniciaremos el depurador desde VS Code.
+
+---
+
+### 19.2.1. Flujo de depuración
+
+El proceso que vamos a utilizar es el siguiente:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Terminal
+   │
+   │ ng serve
+   ▼
+Angular Dev Server
+localhost:4200
+   │
+   ▼
+Angular / Vite
+   │
+   ├── JavaScript generado
+   │
+   └── Source Maps
+           │
+           ▼
+Google Chrome
+http://localhost:4200
+           │
+           │ Protocolo de depuración
+           ▼
+Visual Studio Code
+           │
+           │ Source Maps
+           ▼
+Código TypeScript
+src/app/*.ts</code></pre>
+</div>
+
+Por tanto, debemos distinguir claramente dos acciones:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">ng serve
+    │
+    └── Ejecuta la aplicación Angular
+&#8203;
+Run and Debug
+    │
+    └── Inicia Chrome y conecta VS Code con la aplicación</code></pre>
+</div>
+
+El archivo `launch.json` **no inicia Angular** en esta configuración.
+
+Su función es indicar a VS Code:
+
+* qué navegador debe utilizar;
+* qué dirección debe abrir;
+* dónde se encuentra nuestro código fuente;
+* cómo relacionar el JavaScript ejecutado por Chrome con los archivos TypeScript originales.
+
+---
+
+### 19.2.2. Configurar `launch.json`
+
+Las configuraciones de depuración de Visual Studio Code se almacenan dentro de:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">.vscode/launch.json</code></pre>
+</div>
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">mi-proyecto-angular/
+│
+├── .vscode/
+│   └── launch.json
+│
+├── src/
+│   ├── app/
+│   └── main.ts
+│
+├── angular.json
+├── package.json
+└── ...</code></pre>
+</div>
+
+Para nuestra aplicación utilizaremos la siguiente configuración:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Angular (Chrome) Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true,
+      "sourceMapPathOverrides": {
+        "/src/*": "${webRoot}/src/*",
+        "vite:///*": "${webRoot}/*",
+        "/@fs/*": "/*",
+        "/*": "${webRoot}/*"
+      }
+    }
+  ]
+}</code></pre>
+</div>
+
+Esta configuración indica a VS Code cómo debe abrir Chrome y cómo debe localizar el código TypeScript correspondiente al JavaScript que está ejecutando el navegador.
+
+---
+
+### 19.2.3. Nombre de la configuración
+
+La propiedad:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"name": "Angular (Chrome) Debug"</code></pre>
+</div>
+
+establece el nombre que aparecerá en la sección **Run and Debug** de Visual Studio Code.
+
+Por tanto, al desplegar las configuraciones disponibles veremos:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Angular (Chrome) Debug</code></pre>
+</div>
+
+El nombre es simplemente una etiqueta identificativa y puede modificarse sin alterar el funcionamiento del depurador.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"name": "Depurar Angular"</code></pre>
+</div>
+
+---
+
+### 19.2.4. Tipo de depurador
+
+La propiedad:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"type": "chrome"</code></pre>
+</div>
+
+indica que queremos utilizar **Google Chrome** como navegador para ejecutar la aplicación durante la sesión de depuración.
+
+VS Code utilizará su depurador JavaScript integrado para comunicarse con Chrome.
+
+Gracias a esta comunicación podremos controlar la ejecución de la aplicación directamente desde Visual Studio Code.
+
+---
+
+### 19.2.5. Modo `launch`
+
+La propiedad:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"request": "launch"</code></pre>
+</div>
+
+indica que VS Code debe **lanzar una nueva instancia del navegador** cuando iniciemos la depuración.
+
+El proceso será:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Run and Debug
+      │
+      ▼
+Visual Studio Code
+      │
+      │ launch
+      ▼
+Google Chrome
+      │
+      ▼
+http://localhost:4200</code></pre>
+</div>
+
+Existe también otro modo denominado:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"request": "attach"</code></pre>
+</div>
+
+En ese caso VS Code no abriría el navegador, sino que intentaría conectarse a una instancia de Chrome que ya estuviera ejecutándose con la depuración remota habilitada.
+
+En nuestro caso utilizaremos:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"request": "launch"</code></pre>
+</div>
+
+porque simplifica el proceso de trabajo.
+
+---
+
+### 19.2.6. Dirección de la aplicación
+
+La propiedad:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"url": "http://localhost:4200"</code></pre>
+</div>
+
+indica la dirección que debe abrir Chrome al iniciar la sesión de depuración.
+
+Cuando ejecutamos:
+
+<div class="code-card" data-lang="bash">
+  <div class="code-label">TERMINAL / BASH</div>
+  <pre><code class="language-bash">ng serve</code></pre>
+</div>
+
+Angular utiliza por defecto el puerto:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">4200</code></pre>
+</div>
+
+por lo que la aplicación suele quedar disponible en:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">http://localhost:4200</code></pre>
+</div>
+
+Antes de iniciar el depurador debemos tener, por tanto, Angular ejecutándose.
+
+---
+
+### 19.2.7. Directorio raíz del proyecto
+
+La propiedad:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"webRoot": "${workspaceFolder}"</code></pre>
+</div>
+
+indica al depurador dónde se encuentra la raíz del código fuente de nuestra aplicación.
+
+La variable:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">${workspaceFolder}</code></pre>
+</div>
+
+representa la carpeta que tenemos abierta en Visual Studio Code.
+
+Por ejemplo, en Windows podría corresponder con:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">C:\proyectos\angular19</code></pre>
+</div>
+
+y en Linux o WSL:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/home/alumno/angular19</code></pre>
+</div>
+
+Si hemos abierto directamente la carpeta raíz del proyecto Angular, tendremos:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">${workspaceFolder}
+│
+├── src/
+├── angular.json
+├── package.json
+└── ...</code></pre>
+</div>
+
+Esta información será utilizada posteriormente para localizar los archivos TypeScript originales.
+
+---
+
+### 19.2.8. Source Maps
+
+Una de las propiedades más importantes es:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"sourceMaps": true</code></pre>
+</div>
+
+Los navegadores ejecutan **JavaScript**, no TypeScript.
+
+Nosotros podemos escribir:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">incrementar(): void {
+  this.contador++;
+}</code></pre>
+</div>
+
+pero Angular transforma nuestro código antes de enviarlo al navegador.
+
+Simplificando el proceso:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">TypeScript
+    │
+    │ compilación
+    ▼
+JavaScript
+    │
+    ▼
+Chrome</code></pre>
+</div>
+
+El problema es que nosotros queremos depurar:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">src/app/app.component.ts</code></pre>
+</div>
+
+y no los archivos JavaScript generados durante el proceso de construcción.
+
+Para conseguirlo se utilizan los **source maps**.
+
+Un source map relaciona el código JavaScript generado con el código TypeScript original:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">app.component.ts
+       │
+       │ Source Map
+       ▼
+JavaScript generado
+       │
+       ▼
+Chrome</code></pre>
+</div>
+
+Gracias a esta correspondencia podemos colocar un breakpoint directamente en:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">incrementar(): void {
+  this.contador++; // breakpoint
+}</code></pre>
+</div>
+
+y VS Code será capaz de detener la ejecución en esa línea TypeScript aunque Chrome esté ejecutando JavaScript.
+
+---
+
+### 19.2.9. Resolución de rutas de los Source Maps
+
+En una aplicación Angular moderna las rutas almacenadas en los source maps no siempre coinciden exactamente con las rutas de los archivos que Visual Studio Code tiene abiertos.
+
+Podemos encontrarnos, por ejemplo, con una referencia como:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">vite:///src/app/app.component.ts</code></pre>
+</div>
+
+mientras que el archivo real podría encontrarse en:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/home/alumno/angular19/src/app/app.component.ts</code></pre>
+</div>
+
+Para resolver estas diferencias podemos utilizar:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"sourceMapPathOverrides": {
+  "/src/*": "${webRoot}/src/*",
+  "vite:///*": "${webRoot}/*",
+  "/@fs/*": "/*",
+  "/*": "${webRoot}/*"
+}</code></pre>
+</div>
+
+Cada regla establece una correspondencia entre una ruta utilizada por el navegador o por las herramientas de construcción y una ruta real dentro de nuestro sistema de archivos.
+
+---
+
+### 19.2.10. Regla `/src/*`
+
+La primera regla es:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"/src/*": "${webRoot}/src/*"</code></pre>
+</div>
+
+Supongamos que un source map hace referencia a:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/src/app/productos/productos.component.ts</code></pre>
+</div>
+
+VS Code intentará localizarlo dentro de:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">${webRoot}/src/app/productos/productos.component.ts</code></pre>
+</div>
+
+Si nuestro proyecto está situado en:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/home/alumno/angular19</code></pre>
+</div>
+
+la ruta resultante será:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/home/alumno/angular19/src/app/productos/productos.component.ts</code></pre>
+</div>
+
+El esquema sería:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/src/*
+   │
+   ▼
+${webRoot}/src/*
+   │
+   ▼
+archivo TypeScript real</code></pre>
+</div>
+
+---
+
+### 19.2.11. Regla `vite:///*`
+
+La siguiente regla es:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"vite:///*": "${webRoot}/*"</code></pre>
+</div>
+
+Las herramientas modernas utilizadas durante el desarrollo pueden representar determinados recursos mediante rutas relacionadas con **Vite**.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">vite:///src/app/app.component.ts</code></pre>
+</div>
+
+VS Code debe relacionar esta referencia con:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">${workspaceFolder}/src/app/app.component.ts</code></pre>
+</div>
+
+Esta regla facilita dicha correspondencia.
+
+Su objetivo es evitar situaciones en las que el navegador conoce un archivo pero VS Code no consigue asociarlo con el archivo TypeScript que tenemos abierto.
+
+---
+
+### 19.2.12. Regla `/@fs/*`
+
+También encontramos:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"/@fs/*": "/*"</code></pre>
+</div>
+
+Vite puede utilizar el prefijo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/@fs/</code></pre>
+</div>
+
+para representar archivos existentes en el sistema de archivos.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/@fs/home/alumno/angular19/src/app/app.component.ts</code></pre>
+</div>
+
+realmente puede hacer referencia a:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/home/alumno/angular19/src/app/app.component.ts</code></pre>
+</div>
+
+La regla elimina conceptualmente el prefijo `/@fs/` para permitir que VS Code localice el archivo real.
+
+Esto puede resultar especialmente útil cuando trabajamos con:
+
+* Linux;
+* WSL2;
+* Dev Containers;
+* rutas que no coinciden directamente entre el navegador y el editor.
+
+---
+
+### 19.2.13. Regla genérica
+
+La última regla es:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"/*": "${webRoot}/*"</code></pre>
+</div>
+
+Funciona como una regla general de respaldo.
+
+Indica que una ruta que comience por `/` puede intentar resolverse dentro de:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">${webRoot}</code></pre>
+</div>
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">/src/app/app.component.ts</code></pre>
+</div>
+
+podría intentar resolverse como:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">${webRoot}/src/app/app.component.ts</code></pre>
+</div>
+
+Las reglas más específicas permiten resolver primero los casos particulares y esta regla sirve como correspondencia más general.
+
+---
+
+### 19.2.14. Información de diagnóstico con `trace`
+
+La configuración incluye:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"trace": true</code></pre>
+</div>
+
+Esta propiedad solicita al depurador que genere información detallada sobre su funcionamiento.
+
+Normalmente no necesitamos estudiar esta información durante una sesión de depuración habitual.
+
+Sin embargo, resulta especialmente útil cuando tenemos problemas con los breakpoints.
+
+Un problema habitual consiste en que el breakpoint aparezca como un círculo vacío:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">○</code></pre>
+</div>
+
+en lugar de como un breakpoint correctamente asociado:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">●</code></pre>
+</div>
+
+VS Code puede mostrar entonces un mensaje similar a:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Unbound breakpoint</code></pre>
+</div>
+
+Esto significa que el depurador conoce el breakpoint que hemos creado, pero todavía **no ha conseguido relacionarlo con un archivo que esté ejecutando Chrome**.
+
+El `trace` permite investigar cómo se están resolviendo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Ruta del Source Map
+        │
+        ▼
+sourceMapPathOverrides
+        │
+        ▼
+Ruta del proyecto
+        │
+        ▼
+Archivo TypeScript</code></pre>
+</div>
+
+Una vez comprobado que todo funciona correctamente, `trace` no es imprescindible y podría eliminarse de la configuración.
+
+---
+
+### 19.2.15. Iniciar Angular
+
+Antes de iniciar la sesión de depuración debemos ejecutar la aplicación.
+
+Desde una terminal situada en la raíz del proyecto:
+
+<div class="code-card" data-lang="bash">
+  <div class="code-label">TERMINAL / BASH</div>
+  <pre><code class="language-bash">ng serve</code></pre>
+</div>
+
+Si el proyecto dispone del script habitual en `package.json`, también podremos ejecutar:
+
+<div class="code-card" data-lang="bash">
+  <div class="code-label">TERMINAL / BASH</div>
+  <pre><code class="language-bash">npm start</code></pre>
+</div>
+
+Una vez iniciado el servidor tendremos algo similar a:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Angular
+   │
+   ▼
+http://localhost:4200</code></pre>
+</div>
+
+Conviene comprobar que podemos acceder normalmente a esa dirección antes de iniciar el depurador.
+
+---
+
+### 19.2.16. Crear un breakpoint
+
+Abrimos, por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">src/app/app.component.ts</code></pre>
+</div>
+
+Supongamos que tenemos el siguiente código:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">export class AppComponent {
+&#8203;
+  contador = 0;
+&#8203;
+  incrementar(): void {
+    this.contador++;
+    console.log(this.contador);
+  }
+&#8203;
+}</code></pre>
+</div>
+
+Queremos estudiar qué ocurre cuando cambia el valor de `contador`.
+
+Podemos colocar un breakpoint en:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador++;</code></pre>
+</div>
+
+Para ello hacemos clic en el margen izquierdo del editor.
+
+Visual Studio Code mostrará un punto rojo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">●   this.contador++;</code></pre>
+</div>
+
+Cuando la ejecución llegue a esa instrucción, la aplicación quedará temporalmente detenida.
+
+---
+
+### 19.2.17. Iniciar el depurador
+
+Una vez que Angular está ejecutándose:
+
+<div class="code-card" data-lang="bash">
+  <div class="code-label">TERMINAL / BASH</div>
+  <pre><code class="language-bash">ng serve</code></pre>
+</div>
+
+abrimos la sección:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Run and Debug</code></pre>
+</div>
+
+También podemos utilizar:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Ctrl + Shift + D</code></pre>
+</div>
+
+Seleccionamos la configuración:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Angular (Chrome) Debug</code></pre>
+</div>
+
+y comenzamos la sesión de depuración pulsando:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">F5</code></pre>
+</div>
+
+VS Code utilizará entonces la información almacenada en:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">.vscode/launch.json</code></pre>
+</div>
+
+y abrirá Chrome automáticamente.
+
+El proceso será:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">VS Code
+   │
+   │ F5
+   ▼
+launch.json
+   │
+   ▼
+Google Chrome
+   │
+   ▼
+http://localhost:4200</code></pre>
+</div>
+
+---
+
+### 19.2.18. Alcanzar el breakpoint
+
+Supongamos que nuestra plantilla contiene:
+
+<div class="code-card" data-lang="html">
+  <div class="code-label">HTML</div>
+  <pre><code class="language-html">&lt;button (click)="incrementar()"&gt;
+  Incrementar
+&lt;/button&gt;</code></pre>
+</div>
+
+Cuando pulsemos el botón, Angular ejecutará:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">incrementar(): void {
+  this.contador++;
+}</code></pre>
+</div>
+
+Si hemos establecido el breakpoint en:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador++;</code></pre>
+</div>
+
+VS Code detendrá la aplicación antes de ejecutar esa instrucción.
+
+En ese momento podremos analizar el estado de la aplicación.
+
+---
+
+### 19.2.19. Inspeccionar variables
+
+Cuando el programa se encuentra detenido, la sección **Variables** permite consultar el valor de las variables disponibles en ese instante.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">this
+ └── contador: 0</code></pre>
+</div>
+
+Si avanzamos una instrucción y ejecutamos:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador++;</code></pre>
+</div>
+
+el valor pasará a ser:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">this
+ └── contador: 1</code></pre>
+</div>
+
+Esta posibilidad es especialmente útil para comprobar cómo van cambiando los datos durante la ejecución.
+
+---
+
+### 19.2.20. Ejecutar paso a paso
+
+Cuando la aplicación está detenida en un breakpoint, VS Code muestra diferentes controles de ejecución.
+
+#### Continue
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">F5</code></pre>
+</div>
+
+Continúa normalmente la ejecución hasta que se alcance otro breakpoint.
+
+#### Step Over
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">F10</code></pre>
+</div>
+
+Ejecuta la línea actual y avanza a la siguiente sin entrar dentro de los métodos llamados desde dicha línea.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">const total = calcularTotal();</code></pre>
+</div>
+
+Con **Step Over**, el método `calcularTotal()` se ejecutará completamente y el depurador continuará en la siguiente línea.
+
+#### Step Into
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">F11</code></pre>
+</div>
+
+Permite entrar dentro del método que se está llamando.
+
+Partiendo de:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">const total = calcularTotal();</code></pre>
+</div>
+
+podremos entrar en:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">calcularTotal(): number {
+  // ...
+}</code></pre>
+</div>
+
+y estudiar su ejecución línea por línea.
+
+#### Step Out
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Shift + F11</code></pre>
+</div>
+
+Permite finalizar la ejecución del método actual y regresar al método que realizó la llamada.
+
+El flujo puede representarse como:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Método A
+   │
+   │ Step Into
+   ▼
+Método B
+   │
+   │ Step Out
+   ▼
+Método A</code></pre>
+</div>
+
+---
+
+### 19.2.21. Pila de llamadas
+
+La sección **Call Stack** muestra la secuencia de funciones o métodos que han provocado que la ejecución llegue hasta la línea actual.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">incrementar()
+   ↑
+AppComponent
+   ↑
+eventHandler()</code></pre>
+</div>
+
+Esta información resulta especialmente útil cuando un mismo método puede ser llamado desde diferentes lugares de la aplicación.
+
+Permite responder a una pregunta importante durante la depuración:
+
+> ¿Cómo ha llegado la aplicación hasta esta línea de código?
+
+---
+
+### 19.2.22. Observar expresiones con Watch
+
+La sección **Watch** permite indicar expresiones cuyo valor queremos observar durante la depuración.
+
+Podemos añadir:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador</code></pre>
+</div>
+
+o una expresión más compleja:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador * 2</code></pre>
+</div>
+
+El depurador actualizará su resultado a medida que avanzamos por el código.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">WATCH
+&#8203;
+this.contador       3
+this.contador * 2   6</code></pre>
+</div>
+
+---
+
+### 19.2.23. Debug Console
+
+Visual Studio Code incluye también una consola específica para la sesión de depuración:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Debug Console</code></pre>
+</div>
+
+Cuando la aplicación se encuentra detenida podemos escribir expresiones utilizando el contexto actual.
+
+Por ejemplo:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador</code></pre>
+</div>
+
+podría devolver:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">3</code></pre>
+</div>
+
+También podemos evaluar:
+
+<div class="code-card" data-lang="typescript">
+  <div class="code-label">TYPESCRIPT</div>
+  <pre><code class="language-typescript">this.contador + 10</code></pre>
+</div>
+
+obteniendo:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">13</code></pre>
+</div>
+
+Esto permite experimentar y consultar el estado actual de la aplicación **sin tener que modificar el código fuente**.
+
+---
+
+### 19.2.24. Breakpoints no asociados
+
+Un problema habitual durante la configuración inicial es encontrar un breakpoint que no se activa.
+
+Normalmente veremos:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">○</code></pre>
+</div>
+
+en lugar de:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">●</code></pre>
+</div>
+
+y Visual Studio Code puede mostrar:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Unbound breakpoint</code></pre>
+</div>
+
+Las causas más habituales son:
+
+* Angular todavía no se está ejecutando;
+* `localhost:4200` no es la dirección correcta;
+* el archivo todavía no ha sido cargado por el navegador;
+* VS Code no encuentra los source maps;
+* `webRoot` no coincide con la raíz del proyecto;
+* las rutas de los source maps no coinciden con las rutas reales;
+* estamos trabajando dentro de WSL2 o de un Dev Container.
+
+El proceso que debe poder realizar VS Code es:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">Breakpoint
+    │
+    ▼
+Archivo TypeScript
+    │
+    ▼
+Source Map
+    │
+    ▼
+JavaScript generado
+    │
+    ▼
+Código ejecutado por Chrome</code></pre>
+</div>
+
+Precisamente por este motivo nuestra configuración incluye:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"sourceMaps": true</code></pre>
+</div>
+
+y:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">"sourceMapPathOverrides": {
+  "/src/*": "${webRoot}/src/*",
+  "vite:///*": "${webRoot}/*",
+  "/@fs/*": "/*",
+  "/*": "${webRoot}/*"
+}</code></pre>
+</div>
+
+---
+
+### 19.2.25. Configuración mínima y configuración ampliada
+
+En muchos proyectos una configuración sencilla puede ser suficiente:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Angular (Chrome) Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true
+    }
+  ]
+}</code></pre>
+</div>
+
+Esta configuración contiene los elementos esenciales:
+
+| Propiedad    | Función                                             |
+| ------------ | --------------------------------------------------- |
+| `type`       | Selecciona Chrome como destino de depuración        |
+| `request`    | Indica que VS Code debe abrir el navegador          |
+| `url`        | Dirección de la aplicación Angular                  |
+| `webRoot`    | Raíz local del proyecto                             |
+| `sourceMaps` | Permite depurar TypeScript mediante los source maps |
+
+La configuración ampliada utilizada en esta unidad es:
+
+<div class="code-card" data-lang="json">
+  <div class="code-label">JSON</div>
+  <pre><code class="language-json">{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Angular (Chrome) Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "trace": true,
+      "sourceMapPathOverrides": {
+        "/src/*": "${webRoot}/src/*",
+        "vite:///*": "${webRoot}/*",
+        "/@fs/*": "/*",
+        "/*": "${webRoot}/*"
+      }
+    }
+  ]
+}</code></pre>
+</div>
+
+Las propiedades adicionales permiten:
+
+| Propiedad   | Función                                                     |
+| ----------- | ----------------------------------------------------------- |
+| `trace`     | Obtener información de diagnóstico del depurador            |
+| `/src/*`    | Relacionar rutas de `src` con la carpeta real del proyecto  |
+| `vite:///*` | Resolver determinadas rutas generadas durante el desarrollo |
+| `/@fs/*`    | Resolver rutas que representan archivos del sistema         |
+| `/*`        | Establecer una regla general de respaldo                    |
+
+La configuración ampliada resulta especialmente útil cuando la resolución automática de rutas no es suficiente.
+
+---
+
+### 19.2.26. Procedimiento completo
+
+El procedimiento que seguiremos habitualmente será:
+
+<div class="code-card" data-lang="text">
+  <div class="code-label">SALIDA / TEXTO</div>
+  <pre><code class="language-text">1. Abrir el proyecto Angular en VS Code
+             │
+             ▼
+2. Ejecutar Angular desde una terminal
+             │
+             │ ng serve
+             ▼
+3. Comprobar http://localhost:4200
+             │
+             ▼
+4. Abrir un archivo .ts
+             │
+             ▼
+5. Crear un breakpoint
+             │
+             ▼
+6. Abrir Run and Debug
+             │
+             ▼
+7. Seleccionar Angular (Chrome) Debug
+             │
+             ▼
+8. Pulsar F5
+             │
+             ▼
+9. VS Code abre Chrome
+             │
+             ▼
+10. Interactuar con la aplicación
+             │
+             ▼
+11. Alcanzar el breakpoint
+             │
+             ▼
+12. Analizar variables y ejecución</code></pre>
+</div>
+
+---
+
+### Ideas fundamentales
+
+* **`ng serve` y el depurador son procesos diferentes.**
+* `ng serve` inicia el servidor de desarrollo de Angular.
+* `launch.json` configura cómo VS Code debe iniciar y conectar el navegador.
+* `"request": "launch"` indica que VS Code abrirá una nueva instancia de Chrome.
+* `"url": "http://localhost:4200"` indica la aplicación que debe abrir el navegador.
+* `"webRoot": "${workspaceFolder}"` relaciona el depurador con la carpeta raíz del proyecto.
+* Los **source maps** permiten depurar los archivos TypeScript originales aunque Chrome esté ejecutando JavaScript.
+* `sourceMapPathOverrides` permite resolver diferencias entre las rutas utilizadas durante el desarrollo y las rutas reales de los archivos.
+* `trace` resulta útil para diagnosticar problemas de asociación de breakpoints.
+* Un **breakpoint** permite detener temporalmente la ejecución de la aplicación.
+* Durante una pausa podemos inspeccionar variables, evaluar expresiones y estudiar la pila de llamadas.
+* **Step Over**, **Step Into** y **Step Out** permiten estudiar el flujo de ejecución paso a paso.
+* La depuración permite analizar el comportamiento real de una aplicación de forma mucho más precisa que mediante el uso sistemático de `console.log`.
 
 ---
 
@@ -1362,7 +2631,7 @@ Navegador</code></pre>
 
 Los siguientes ejercicios están pensados para realizarse sobre el código de ejemplo de la unidad:
 
-<https://github.com/hokahey007/codebase-angular/tree/main/01_tu_primera_aplicacion_angular>
+<https://github.com/hokahey007/aprendiendo-angular-con-codigo/tree/main/01_tu_primera_aplicacion_angular>
 
 El proyecto utiliza **Angular 19** y parte de la aplicación inicial generada con Angular CLI. No se pretende introducir todavía conceptos avanzados: el objetivo es **comprender y manipular las piezas que ya hemos estudiado en esta unidad**.
 
