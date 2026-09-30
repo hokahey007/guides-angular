@@ -611,8 +611,6 @@ El componente raíz se convierte así en un Flexbox vertical.
   display: flex;
 
   flex: 1;
-
-  width: 100%;
 }
 ```
 
@@ -623,6 +621,45 @@ El propio:
 ```
 
 es ahora el contenedor Flexbox de la zona central.
+
+### ¿Es necesario `width: 100%`?
+
+En este caso, no.
+
+El componente raíz utiliza:
+
+```css
+:host {
+  display: flex;
+  flex-direction: column;
+}
+```
+
+Por tanto, en `app-main-layout`:
+
+```css
+flex: 1;
+```
+
+hace que ocupe el **espacio vertical restante**, ya que el eje principal es vertical.
+
+El ancho completo se obtiene normalmente de forma automática porque Flexbox utiliza por defecto:
+
+```css
+align-items: stretch;
+```
+
+Por eso, mientras no cambiemos ese comportamiento, `width: 100%` sería redundante.
+
+Recuerda:
+
+```text
+flex: 1 en un contenedor column
+→ reparte espacio vertical
+
+flex: 1 en un contenedor row
+→ reparte espacio horizontal
+```
 
 ---
 
